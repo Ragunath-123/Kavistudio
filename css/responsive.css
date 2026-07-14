@@ -1,0 +1,104 @@
+/* ============================================
+   KAVI PHOTO STUDIO — Responsive Styles
+   ============================================ */
+
+@media (max-width: 1200px) {
+  .section-title { font-size: 2.2rem; }
+  .hero-title { font-size: 3rem; }
+}
+
+@media (max-width: 992px) {
+  .section-padding { padding: 70px 0; }
+  .navbar-custom { background: rgba(11, 11, 11, 0.98); padding: 12px 0; backdrop-filter: blur(10px); }
+  .navbar-custom .navbar-collapse {
+    background: var(--bg-secondary); margin-top: 15px; padding: 20px;
+    border-radius: var(--radius); border: 1px solid rgba(212, 175, 55, 0.1);
+  }
+  .navbar-custom .nav-link { margin: 0; padding: 12px 0 !important; border-bottom: 1px solid rgba(255, 255, 255, 0.05); }
+  .navbar-custom .nav-link::after { display: none; }
+  .about-collage { min-height: 400px; margin-top: 40px; }
+  .timeline::before { left: 25px; }
+  .timeline-item { width: 100%; padding-left: 60px; padding-right: 10px; text-align: left !important; left: 0 !important; }
+  .timeline-item .timeline-dot { left: 0 !important; right: auto !important; }
+  .gallery-grid { columns: 2; }
+  .insta-grid { grid-template-columns: repeat(4, 1fr); }
+  .map-container iframe { height: 300px; }
+}
+
+@media (max-width: 768px) {
+  .section-padding { padding: 50px 0; }
+  .section-title { font-size: 1.9rem; }
+  .section-subtitle { font-size: 0.9rem; margin-bottom: 35px; }
+  .hero-title { font-size: 2.3rem; min-height: 70px; }
+  .hero-subtitle { font-size: 1rem; }
+  .hero-buttons { gap: 12px; }
+  .hero-buttons .btn-gold, .hero-buttons .btn-outline-gold { padding: 12px 26px; font-size: 0.78rem; }
+  .page-banner-content h1 { font-size: 2.2rem; }
+  .page-banner { min-height: 40vh; }
+  .about-collage { min-height: 350px; }
+  .about-collage .img-1 { width: 65%; }
+  .about-collage .img-2 { width: 55%; }
+  .about-collage .img-3 { width: 45%; }
+  .counter-item .counter-number { font-size: 2.2rem; }
+  .counter-item .counter-label { font-size: 0.8rem; }
+  .package-card { padding: 30px 25px; }
+  .package-card.popular { transform: scale(1); }
+  .contact-form { padding: 25px; }
+  .cta-section h2 { font-size: 1.8rem; }
+  .cta-section::before { background-attachment: scroll; }
+  .footer { padding: 50px 0 0; }
+}
+
+@media (max-width: 576px) {
+  .section-padding { padding: 40px 0; }
+  .section-title { font-size: 1.6rem; }
+  .navbar-brand-custom { font-size: 1.1rem; }
+  .navbar-brand-custom .logo-icon { font-size: 1.1rem; }
+  .hero-title { font-size: 1.8rem; min-height: 60px; }
+  .hero-tagline { font-size: 0.75rem; letter-spacing: 2px; }
+  .hero-subtitle { font-size: 0.9rem; }
+  .hero-buttons { flex-direction: column; align-items: center; }
+  .hero-buttons .btn-gold, .hero-buttons .btn-outline-gold { width: 100%; max-width: 250px; }
+  .page-banner-content h1 { font-size: 1.8rem; }
+  .gallery-grid { columns: 1; }
+  .gallery-filter { padding: 6px 16px; font-size: 0.72rem; }
+  .insta-grid { grid-template-columns: repeat(3, 1fr); }
+  .package-card { padding: 25px 20px; }
+  .package-card .package-price { font-size: 2rem; }
+  .floating-buttons { right: 12px; bottom: 12px; gap: 10px; }
+  .floating-btn { width: 46px; height: 46px; font-size: 1.2rem; }
+  .contact-form { padding: 20px; }
+  .cta-section h2 { font-size: 1.5rem; }
+  .cta-section p { font-size: 0.85rem; }
+  .footer h5 { font-size: 1rem; }
+  .footer { padding: 40px 0 0; }
+  .about-collage { min-height: 280px; }
+  .about-collage .img-1 { width: 70%; }
+  .about-collage .img-2 { width: 60%; }
+  .about-collage .img-3 { width: 50%; }
+  .about-badge { padding: 10px 18px; }
+  .about-badge .number { font-size: 1.5rem; }
+  .timeline-item { padding-left: 55px; }
+  .timeline-item .timeline-dot { width: 40px; height: 40px; font-size: 1rem; }
+  .scroll-down { display: none; }
+}
+
+@media (max-width: 380px) {
+  .section-title { font-size: 1.4rem; }
+  .hero-title { font-size: 1.5rem; }
+  .navbar-brand-custom { font-size: 1rem; }
+  .gallery-filter { padding: 5px 12px; font-size: 0.68rem; }
+  .insta-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-height: 500px) and (orientation: landscape) {
+  .hero { min-height: 100vh; }
+  .hero-title { font-size: 2rem; min-height: 50px; }
+  .hero-subtitle { font-size: 0.85rem; margin-bottom: 20px; }
+  .scroll-down { display: none; }
+}
+
+@media print {
+  .navbar-custom, .floating-buttons, .scroll-down, .preloader { display: none !important; }
+  body { background: white; color: black; }
+}
